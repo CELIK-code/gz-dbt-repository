@@ -3,21 +3,21 @@ version: 2
 sources:
   - name: raw
     schema: gz_raw_data
-    tables: 
+    tables:
       - name: products
         identifier: raw_gz_products
         description: all_product
-        columns: 
+        columns:
           - name: products_id
             description: primary_key
-            tests: 
+            tests:
               - unique
               - not_null
           - name: purchase_price
             description: pr
             tests:
               - not_null
-      - name: sales  
+      - name: sales
         identifier: raw_gz_sales
         description: all_sales
         columns:
@@ -72,9 +72,3 @@ sources:
             tests:
               - unique
               - not_null
-              
-                  
-                  
-             
-                  
-  
