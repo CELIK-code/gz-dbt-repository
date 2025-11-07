@@ -24,7 +24,7 @@ sources:
           - name: quantity
             tests:
               - not_null
-      - name: product
+      - name: products
         identifier: raw_gz_product
         columns:
           - name: products_id
