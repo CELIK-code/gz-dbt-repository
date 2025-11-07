@@ -4,4 +4,4 @@
         logCost,
         ship_cost
 
-    from {{ source('raw', 'ship') }}
+    from {{ source('raw','ship') }}
