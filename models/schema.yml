@@ -5,7 +5,7 @@ sources:
     schema: gz_raw_data
     tables:
       - name: sales
-        identifier: raw_sales
+        identifier: raw_gz_sales
         description: sales data for greenweez company
         columns:
           - name: date_date
@@ -25,7 +25,7 @@ sources:
             tests:
               - not_null
       - name: product
-        identifier: raw_product
+        identifier: raw_gz_product
         columns:
           - name: products_id
             tests:
@@ -35,7 +35,7 @@ sources:
             tests:
               - not_null
       - name: ship
-        identifier: raw_ship
+        identifier: raw_gz_ship
         columns:
           - name: orders_id
             description: orders id
