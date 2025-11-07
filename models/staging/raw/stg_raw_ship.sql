@@ -1,7 +1,7 @@
     select
         orders_id,
         shipping_fee,
-        logCost,
+        log_cost,
         ship_cost
 
     from {{ source('raw', 'ship')}}
