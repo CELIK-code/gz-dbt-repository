@@ -2,6 +2,6 @@
         orders_id,
         shipping_fee,
         logCost,
-        ship_cost
+        cast(ship_cost as float64) as ship_cost
 
     from {{ source('raw', 'ship')}}
