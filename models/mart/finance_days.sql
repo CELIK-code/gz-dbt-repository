@@ -1,6 +1,3 @@
-{{ config(
-    materialized = 'table'
-) }}
 WITH orders_per_day as (
  SELECT
  date_date,
