@@ -55,3 +55,50 @@ sources:
           - name: ship_cost
             tests:
               - not_null
+      - name: adwords
+        identifier: raw_gz_adwords
+      - name: bing
+        identifier: raw_gz_bing
+      - name: criteo
+        identifier: raw_gz_criteo
+      - name: facebook
+        identifier: raw_gz_facebook  
+
+models:
+      - name: int_campaigns
+        columns:
+          - name: paid_source
+            tests:
+              - not_null
+          - name: campaign_name
+            tests:
+              - not_null
+
+      - name: int_campaigns_day
+        columns:
+          - name: date_date
+            tests:
+              - not_null
+          - name: ads_cost  
+            tests:
+              - not_null
+          - name: ads_impression
+            tests:
+              - not_null
+          - name: ads_clicks
+            tests:
+              - not_null
+
+      - name: finance_campaigns_day
+        description: global kpi
+        columns:
+          - name: ads_margin
+            description: operational_margin - ads_cost
+            tests:
+              - not_null
+          - name: average_basket
+            description: günlük ortalama sepet tutarı
+            tests:
+              - not_null
+      
+
